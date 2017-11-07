@@ -18,7 +18,9 @@ export class AppComponent implements OnInit {
           if (date.isSame('2017-09-26', 'day'))
             return 'mystyle';
           return false;
-      	}
+        },
+        emitChangeOnSameDate: true,
+        disableInput: true
     }
 
     public picker2 = {
