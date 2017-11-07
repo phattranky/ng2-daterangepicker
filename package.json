@@ -25,7 +25,8 @@
     "moment": "^2.24.0",
     "rxjs": "~6.5.4",
     "tslib": "^1.10.0",
-    "zone.js": "~0.10.2"
+    "zone.js": "~0.10.2",
+    "bootstrap-daterangepicker": "git+https://github.com/phattranky/bootstrap-daterangepicker.git"
   },
   "devDependencies": {
     "@angular-devkit/build-angular": "~0.900.2",
