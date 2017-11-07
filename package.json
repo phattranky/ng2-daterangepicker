@@ -1,6 +1,7 @@
 {
-  "name": "angular9",
-  "version": "0.0.0",
+  "name": "ng2-daterangepicker-plus",
+  "version": "3.0.0",
+  "description": "Angular 2 DaterangePicker Plus component, angular 9 supported",
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
@@ -10,6 +11,15 @@
     "e2e": "ng e2e"
   },
   "private": true,
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/phattranky/ng2-daterangepicker"
+  },
+  "bugs": {
+    "url": "https://github.com/phattranky/ng2-daterangepicker/issues"
+  },
+  "homepage": "https://github.com/phattranky/ng2-daterangepicker#readme",
+  "license": "MIT",
   "dependencies": {
     "@angular/animations": "~9.0.1",
     "@angular/common": "~9.0.1",
