@@ -93,6 +93,9 @@ export class DaterangePickerComponent implements AfterViewInit, OnDestroy, DoChe
         $(this.input.nativeElement).on('show.daterangepicker',
             (e:any, picker:any) => {
                 let event = { event: e, picker: picker };
+                if (this.targetOptions.autoPosition && picker) {
+                    this.autoPositionDatepicker(picker);
+                }
                 this.showDaterangepicker.emit(event);
             }
         );
@@ -133,4 +136,27 @@ export class DaterangePickerComponent implements AfterViewInit, OnDestroy, DoChe
             }
         }
     }
+
+    public autoPositionDatepicker(datePicker: any) {
+        const $container = datePicker.container;
+        const $ele = datePicker.element;
+
+        if (!$container || !$ele) {
+            return;
+        }
+
+        // auto vertical positioning
+        const topSpacing = $ele.offset().top;
+        const bottomSpacing = window.innerHeight - topSpacing - $ele.height();
+        datePicker.drops = topSpacing > bottomSpacing ? 'up' : 'down';
+
+        // auto horizontal positioning
+        const leftSpacing = $ele.offset().left;
+        const rightSpacing = window.innerWidth - leftSpacing - $ele.width();
+        datePicker.opens = leftSpacing > rightSpacing ? 'left' : 'right';
+        $container.removeClass('opensleft opensright openscenter');
+        $container.addClass(`opens${datePicker.opens}`);
+
+        datePicker.move();
+      }
 }

@@ -29,6 +29,11 @@ export class AppComponent implements OnInit {
         opens: 'right'
     }
 
+    public singleDatepicker = {
+        singleDatePicker: true,
+        autoPosition: true
+    }
+
     public chosenDate: any = {
         start: moment().subtract(12, 'month'),
         end: moment().subtract(6, 'month'),
@@ -37,6 +42,10 @@ export class AppComponent implements OnInit {
     public chosenDate2: any = {
         start: moment().subtract(12, 'month'),
         end: moment().subtract(6, 'month'),
+    };
+
+    public singleDate: any = {
+        start: moment()
     };
 
     public eventLog = '';
