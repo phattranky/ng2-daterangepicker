@@ -137,7 +137,7 @@ export class DaterangePickerComponent implements AfterViewInit, OnDestroy, DoChe
         }
     }
 
-    public autoPositionDatepicker(datePicker: any) {
+    autoPositionDatepicker(datePicker: any) {
         const $container = datePicker.container;
         const $ele = datePicker.element;
 
