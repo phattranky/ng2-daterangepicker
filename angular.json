@@ -122,7 +122,7 @@
         }
       }
     },
-    "ng2-daterangepicker": {
+    "ng2-daterangepicker-plus": {
       "projectType": "library",
       "root": "projects/ng2-daterangepicker",
       "sourceRoot": "projects/ng2-daterangepicker/src",

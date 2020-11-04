@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import moment from 'moment';
-import { DaterangepickerConfig } from "ng2-daterangepicker";
+import { DaterangepickerConfig } from "ng2-daterangepicker-plus";
 
 @Component({
   selector: 'app-root',
@@ -23,7 +23,9 @@ export class AppComponent {
       if (date.isSame('2017-09-26', 'day'))
         return 'mystyle';
       return false;
-    }
+    },
+    emitChangeOnSameDate: true,
+    disableInput: true
   }
 
   constructor(private daterangepickerOptions: DaterangepickerConfig) {

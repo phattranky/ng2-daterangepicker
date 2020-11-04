@@ -13,9 +13,10 @@ I have not made efforts to test earlier versions of angular with version 3.x of 
 
 Use your preferred package manager
 ```
-npm install ng2-daterangepicker
-yarn add ng2-daterangepicker
-ng add ng2-daterangepicker
+ng build --project="ng2-daterangepicker-plus"
+npm install ng2-daterangepicker-plus
+yarn add ng2-daterangepicker-plus
+ng add ng2-daterangepicker-plus
 ```
 
 #### peerDependencies

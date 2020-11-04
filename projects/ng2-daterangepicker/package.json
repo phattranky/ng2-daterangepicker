@@ -1,17 +1,17 @@
 {
-  "name": "ng2-daterangepicker",
+  "name": "ng2-daterangepicker-plus",
   "version": "3.0.1",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/evansmwendwa/ng2-daterangepicker"
+    "url": "git+https://github.com/phattranky/ng2-daterangepicker"
   },
   "bugs": {
-    "url": "https://github.com/evansmwendwa/ng2-daterangepicker/issues"
+    "url": "https://github.com/phattranky/ng2-daterangepicker/issues"
   },
-  "homepage": "https://github.com/evansmwendwa/ng2-daterangepicker#readme",
+  "homepage": "https://github.com/phattranky/ng2-daterangepicker#readme",
   "license": "MIT",
   "dependencies": {
-    "daterangepicker": "^3.1.0"
+    "bootstrap-daterangepicker-plus": "^3.1.0"
   },
   "peerDependencies": {
     "@angular/common": "^9.0.1",

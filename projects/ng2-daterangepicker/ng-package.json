@@ -1,6 +1,6 @@
 {
   "$schema": "../../node_modules/ng-packagr/ng-package.schema.json",
-  "dest": "../../dist/ng2-daterangepicker",
+  "dest": "../../dist/ng2-daterangepicker-plus",
   "lib": {
     "entryFile": "src/public-api.ts"
   },
@@ -8,6 +8,6 @@
     "assets/**/*"
   ],
   "whitelistedNonPeerDependencies": [
-    "daterangepicker"
+    "bootstrap-daterangepicker-plus"
   ]
 }
