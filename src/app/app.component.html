@@ -13,5 +13,15 @@
       </span>
     </div>
 
+    <h3>Single Datepicker with auto positioning</h3>
+    <div class="input-group" daterangepicker [options]="singleDatepicker" (selected)="selectedDate($event, singleDate)">
+        <span class="form-control uneditable-input" >
+            {{ singleDate.start | date:'M/dd/y' }}
+        </span>
+        <span class="input-group-btn">
+            <a type="button" class="btn btn-default"><i class="glyphicon glyphicon-calendar"></i></a>
+        </span>
+    </div>
+
   </div>
 </div>

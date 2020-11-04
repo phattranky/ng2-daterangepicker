@@ -28,6 +28,16 @@ export class AppComponent {
     disableInput: true
   }
 
+
+  public singleDatepicker = {
+    singleDatePicker: true,
+    autoPosition: true
+  }
+
+  public singleDate: any = {
+    start: moment()
+  };
+
   constructor(private daterangepickerOptions: DaterangepickerConfig) {
     this.daterangepickerOptions.settings = {
       locale: { format: 'YYYY-MM-DD' },
